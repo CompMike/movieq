@@ -15,7 +15,7 @@
       <tr>
         <td><%= recommendation.title %></td>
         <td><%= recommendation.genre %></td>
-        <td><%= recommendation.user.email %></td>
+        <td><%= recommendation.user.first_name %> <%= recommendation.user.last_name %></td>
         <td><%= link_to 'Show', recommendation %></td>
         <td><%= link_to 'Edit', edit_recommendation_path(recommendation) %></td>
         <td><%= link_to 'Destroy', recommendation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
