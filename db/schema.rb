@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140908222427) do
+ActiveRecord::Schema.define(version: 20140909001018) do
+
+  create_table "recommendations", force: true do |t|
+    t.string   "title"
+    t.string   "genre"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "recommendations", ["user_id"], name: "index_recommendations_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
