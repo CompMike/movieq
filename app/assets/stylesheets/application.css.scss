@@ -12,5 +12,48 @@
  *
 
  */
-/* @import "bootstrap";
-@import "bootstrap-sprockets"; */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootstrap_theme";
+
+// Make other non link text appear inline in navbar
+
+body {
+	padding-top: 3em;
+}
+.login-status {
+  padding-top: 19.5px;
+  padding-bottom: 19.5px;
+  display: block;
+}
+.logo {
+	padding-right: .5em;
+	padding-bottom: .5em;
+}
+.navbar {
+	margin-top: .5em;
+}
+h2 {
+	color: #00BC8C;
+}
+.notices {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+.login-block {
+	padding: 0 3em 0 1.75em;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+td.controls {
+	width: 60px;
+}
+table {
+	margin-top: 2em;
+}
+thead {
+	border-bottom: 1px solid #444;
+}

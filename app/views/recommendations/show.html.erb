@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Title:</strong>
   <%= @recommendation.title %>
@@ -10,10 +8,6 @@
   <%= @recommendation.genre %>
 </p>
 
-<p>
-  <strong>User:</strong>
-  <%= @recommendation.user %>
-</p>
 
 <%= link_to 'Edit', edit_recommendation_path(@recommendation) %> |
-<%= link_to 'Back', recommendations_path %>
+<%= link_to 'Back to All Recomendations', recommendations_path %>
