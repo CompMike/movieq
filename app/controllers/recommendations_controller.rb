@@ -52,7 +52,9 @@ class RecommendationsController < ApplicationController
       end
     end
   end
-
+  def yourpicks
+  	@recommendations = Recommendation.all
+  end
   # DELETE /recommendations/1
   # DELETE /recommendations/1.json
   def destroy

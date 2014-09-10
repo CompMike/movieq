@@ -1,5 +1,4 @@
-
-	<h1 class="movieboard-header">Movie Board</h1> <%= link_to 'Add a Movie', new_recommendation_path, class: "btn btn-success movieboard-button"%>
+<h1 class="movieboard-header">Movie Board</h1> <%= link_to 'Add a Movie', new_recommendation_path, class: "btn btn-success movieboard-button"%>
 	<table class="table table-hover">
 	  <thead>
 	    <tr>
@@ -10,7 +9,7 @@
 	    </tr>
 	  </thead>
 
-	  <tbody>
+ <tbody>
 	    <% @recommendations.each do |recommendation| %>
 	      <tr>
 	        <td><%= recommendation.title %></td>

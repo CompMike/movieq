@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 root 'recommendations#index'
 
   get 'mymovies' => 'home#mymovies'
+  get 'yourpicks' => 'recommendations#yourpicks'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
