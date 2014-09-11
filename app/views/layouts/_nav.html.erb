@@ -14,7 +14,7 @@
 				  <div class="navbar-collapse collapse navbar-responsive-collapse">
 				    <ul class="nav navbar-nav">
 				      <li class="active"><%= link_to("Movie Board", "/") %></li>
-				      <li><%= link_to("Your Picks", "yourpicks") %></li>
+
 				    </ul>
 				    <ul class="nav navbar-nav navbar-right">
 				      <li><% if user_signed_in? %> <strong class="login-status">Hello, <%= current_user.first_name %>.</strong></li>

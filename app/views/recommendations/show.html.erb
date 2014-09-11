@@ -1,13 +1,13 @@
-<p>
-  <strong>Title:</strong>
-  <%= @recommendation.title %>
-</p>
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<p>
 
-<p>
-  <strong>Genre:</strong>
-  <%= @recommendation.genre %>
-</p>
-
-
+		  <h2>Title: <span style="color:white;"><%= @recommendation.title.camelize %></span></h2>
+		  <h3></h3>
+		</p>
 <%= link_to 'Edit', edit_recommendation_path(@recommendation) %> |
 <%= link_to 'Back to All Recomendations', recommendations_path %>
+
+	</div>
+</div>
+

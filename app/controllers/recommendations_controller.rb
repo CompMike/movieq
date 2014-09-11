@@ -17,6 +17,7 @@ class RecommendationsController < ApplicationController
   # GET /recommendations/new
   def new
     @recommendation = Recommendation.new
+    @popular_movies = ::Tmdb::Movie.popular
   end
 
   # GET /recommendations/1/edit

@@ -4,7 +4,7 @@
 	  <thead>
 	    <tr>
 	      <th>Movie Title</th>
-	      <th>Genre</th>
+
 	      <th>Added By</th>
 	      <th colspan="3"></th>
 	    </tr>
@@ -13,8 +13,7 @@
 	  <tbody>
 	    <% @recommendations.each do |recommendation| %>
 	      <tr>
-	        <td><%= recommendation.title %></td>
-	        <td><%= recommendation.genre %></td>
+	        <td><%= recommendation.title.camelize %></td>
 	        <td><%= recommendation.user.first_name %> <%= recommendation.user.last_name %></td>
 	        <td class="controls"><%= link_to 'Show', recommendation, class: "btn btn-primary btn-sm" %></td>
 	        <td class="controls"><%= link_to 'Edit', edit_recommendation_path(recommendation), class: "btn btn-info btn-sm" %></td>

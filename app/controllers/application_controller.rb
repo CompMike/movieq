@@ -10,4 +10,8 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_up) << :first_name << :last_name
     devise_parameter_sanitizer.for(:account_update) << :first_name << :last_name
   end
+  def set_config
+  	@configuration = Tmdb::Configuration.new
+  end
+
 end
